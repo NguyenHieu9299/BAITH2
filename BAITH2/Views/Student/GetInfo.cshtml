@@ -1,0 +1,17 @@
+﻿@{
+    ViewBag.Title = "GetInfo";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<h2>GetInfo</h2>
+@using (Html.BeginForm())
+{
+    <input type="text" name="ten"/>;
+    <input type="text" name="ten"/>;
+    <input type="text" name="ten"/>;
+    <input type="submit" value=" Hien Thi Thong Tin"/>;
+}
+<h2>
+    Thong tin ; Ho va Ten :@ViewBag.ten <br>
+    Tuoi :@ViewBag.tuoi<br>
+    Lớp:@ViewBag.lop
+</h2>
