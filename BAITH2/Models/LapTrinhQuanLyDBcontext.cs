@@ -13,6 +13,7 @@ namespace BAITH2.Models
         }
 
         public virtual DbSet<Account> Accounts { get; set; }
+        public virtual DbSet<Student>   Students { get; set; }
 
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {

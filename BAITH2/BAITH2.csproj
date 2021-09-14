@@ -134,9 +134,19 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202109140256538_create_table_student.cs" />
+    <Compile Include="Migrations\202109140256538_create_table_student.Designer.cs">
+      <DependentUpon>202109140256538_create_table_student.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202109140307308_add_column_student_address.cs" />
+    <Compile Include="Migrations\202109140307308_add_column_student_address.Designer.cs">
+      <DependentUpon>202109140307308_add_column_student_address.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Account.cs" />
     <Compile Include="Models\GiaiPhuongTrinh.cs" />
     <Compile Include="Models\LapTrinhQuanLyDBcontext.cs" />
+    <Compile Include="Models\Student.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -183,6 +193,7 @@
   <ItemGroup>
     <Folder Include="App_Data\" />
     <Folder Include="Views\GiaiPhuongTrinh\" />
+    <Folder Include="Views\Person\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff2" />
@@ -196,6 +207,14 @@
     <None Include="packages.config" />
     <Content Include="Scripts\jquery-3.4.1.slim.min.map" />
     <Content Include="Scripts\jquery-3.4.1.min.map" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\202109140256538_create_table_student.resx">
+      <DependentUpon>202109140256538_create_table_student.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202109140307308_add_column_student_address.resx">
+      <DependentUpon>202109140307308_add_column_student_address.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
